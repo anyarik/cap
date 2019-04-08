@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Handlers\CalendarControl\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="VallySoft.EventBusRabbitMQ" Version="1.0.0" />
+    <PackageReference Include="VS.MessageBus" Version="1.0.0" />
+    <PackageReference Include="VS.Dapper.SqlMapper" Version="1.0.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data Layer\Events\Events.csproj" />
+    <ProjectReference Include="..\..\Data Layer\Models\Models.csproj" />
+    <ProjectReference Include="..\..\Third Party Library\Telegram.Bot.Framework-master\src\Telegram.Bot.Framework\Telegram.Bot.Framework.csproj" />
+    <ProjectReference Include="..\..\Data Layer\Repositories\Repositories.csproj" />
+    <ProjectReference Include="..\..\Data Layer\Models.Map\Models.Map.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="VallySoft.Dapper.CommonQuery">
+      <HintPath>..\..\..\libs\VallySoft.Dapper.CommonQuery.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
