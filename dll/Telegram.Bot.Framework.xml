@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telegram.Bot.Framework</name>
+    </assembly>
+    <members>
+        <member name="T:Telegram.Bot.Framework.Abstractions.IBot">
+            <summary>
+            A wrapper around TelegramBot class. Used to make calls to the Bot API
+            </summary>
+        </member>
+        <member name="P:Telegram.Bot.Framework.Abstractions.IBot.Client">
+            <summary>
+            Instance of Telegram bot client
+            </summary>
+        </member>
+        <member name="T:Telegram.Bot.Framework.Abstractions.IBotOptions">
+            <summary>
+            Configurations for the bot
+            </summary>
+        </member>
+        <member name="P:Telegram.Bot.Framework.Abstractions.IBotOptions.ApiToken">
+            <summary>
+            Optional if client not needed. Telegram API token
+            </summary>
+        </member>
+        <member name="T:Telegram.Bot.Framework.Abstractions.IUpdateHandler">
+            <summary>
+            Processes an update
+            </summary>
+        </member>
+        <member name="M:Telegram.Bot.Framework.Abstractions.IUpdateHandler.HandleAsync(Telegram.Bot.Framework.Abstractions.IUpdateContext,Telegram.Bot.Framework.Abstractions.UpdateDelegate)">
+            <summary>
+            Handles the update for bot. This method will be called only if CanHandleUpdate returns <value>true</value>
+            </summary>
+            <param name="bot">Instance of the bot this command is operating for</param>
+            <param name="update">The update to be handled</param>
+            <returns>Result of handling this update</returns>
+        </member>
+        <member name="T:Telegram.Bot.Framework.Abstractions.CommandBase">
+            <summary>
+            Base handler implementation for a command such as "/start"
+            </summary>
+        </member>
+        <member name="M:Telegram.Bot.Framework.TelegramBotMiddleware`1.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Telegram.Bot.Framework.Abstractions.UpdateDelegate,Microsoft.Extensions.Logging.ILogger{Telegram.Bot.Framework.TelegramBotMiddleware{`0}})">
+            <summary>
+            Initializes an instance of middleware
+            </summary>
+            <param name="next">Instance of request delegate</param>
+            <param name="logger">Logger for this middleware</param>
+        </member>
+        <member name="M:Telegram.Bot.Framework.TelegramBotMiddleware`1.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Gets invoked to handle the incoming request
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Telegram.Bot.Framework.BotOptions`1">
+            <summary>
+            Configurations for the bot
+            </summary>
+            <typeparam name="TBot">Type of Bot</typeparam>
+        </member>
+        <member name="P:Telegram.Bot.Framework.BotOptions`1.ApiToken">
+            <summary>
+            Optional if client not needed. Telegram API token
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.TelegramBotMiddlewareExtensions">
+            <summary>
+            Extenstion methods for adding Telegram Bot framework to the ASP.NET Core middleware
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.TelegramBotMiddlewareExtensions.UseTelegramBotWebhook``1(Microsoft.AspNetCore.Builder.IApplicationBuilder,Telegram.Bot.Framework.Abstractions.IBotBuilder)">
+            <summary>
+            Add Telegram bot webhook handling functionality to the pipeline
+            </summary>
+            <typeparam name="TBot">Type of bot</typeparam>
+            <param name="app">Instance of IApplicationBuilder</param>
+            <param name="ensureWebhookEnabled">Whether to set the webhook immediately by making a request to Telegram bot API</param>
+            <returns>Instance of IApplicationBuilder</returns>
+        </member>
+    </members>
+</doc>

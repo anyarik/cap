@@ -18,19 +18,33 @@
     <PackageReference Include="VS.MessageBus" Version="1.0.0" />
     <PackageReference Include="VS.Dapper.SqlMapper" Version="1.0.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\Data Layer\Events\Events.csproj" />
-    <ProjectReference Include="..\..\Data Layer\Models\Models.csproj" />
-    <ProjectReference Include="..\..\Third Party Library\Telegram.Bot.Framework-master\src\Telegram.Bot.Framework\Telegram.Bot.Framework.csproj" />
-    <ProjectReference Include="..\..\Data Layer\Repositories\Repositories.csproj" />
-    <ProjectReference Include="..\..\Data Layer\Models.Map\Models.Map.csproj" />
+    <PackageReference Include="Telegram.Bot" Version="14.10.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="VallySoft.Dapper.CommonQuery">
       <HintPath>..\..\..\libs\VallySoft.Dapper.CommonQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Events">
+      <HintPath>dll\Events.dll</HintPath>
+    </Reference>
+    <Reference Include="Models">
+      <HintPath>dll\Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Models.Map">
+      <HintPath>dll\Models.Map.dll</HintPath>
+    </Reference>
+    <Reference Include="OrderEngine">
+      <HintPath>dll\OrderEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Repositories">
+      <HintPath>dll\Repositories.dll</HintPath>
+    </Reference>
+    <Reference Include="VallySoft.Dapper.CommonQuery">
+      <HintPath>dll\VallySoft.Dapper.CommonQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Telegram.Bot.Framework">
+      <HintPath>dll\Telegram.Bot.Framework.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

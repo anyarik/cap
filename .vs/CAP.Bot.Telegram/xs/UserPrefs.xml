@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{717E11FF-8946-44E0-89CB-1775F403AEBC}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Extensions/UpdateExtension.cs">
+    <Files>
+      <File FileName="Extensions/AppStartupExtensions.cs" Line="12" Column="7" />
+      <File FileName="Extensions/UpdateExtension.cs" Line="8" Column="20" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CAP.Bot.Telegram" expanded="True">
+            <Node name="CAP.Bot.Telegram" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Extensions" expanded="True">
+                <Node name="UpdateExtension.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CAP.Bot.Telegram PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

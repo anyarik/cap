@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "9c8c2cb09bf25cf93b209d581987bfb52e78a6a7"
+    "signature": "4c3e840f65c4566ab062a15d22811797d82190c0"
   },
   "compilationOptions": {
     "defines": [
@@ -25,18 +25,20 @@
       "CAP.Bot.Telegram/1.0.0": {
         "dependencies": {
           "Autofac.Extensions.DependencyInjection": "4.4.0",
-          "Events": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3",
-          "Models": "1.0.0",
-          "Models.Map": "1.0.0",
-          "Repositories": "1.0.0",
-          "Telegram.Bot.Framework": "2.0.0-alpha4",
+          "Telegram.Bot": "14.10.0",
           "VS.Dapper.SqlMapper": "1.0.0",
           "VS.MessageBus": "1.0.0",
           "VallySoft.EventBusRabbitMQ": "1.0.0",
+          "Events": "1.0.0.0",
+          "Models": "1.0.0.0",
+          "Models.Map": "1.0.0.0",
+          "OrderEngine": "1.0.0.0",
+          "Repositories": "1.0.0.0",
+          "Telegram.Bot.Framework": "1.0.0.0",
           "VallySoft.Dapper.CommonQuery": "1.0.3.0"
         },
         "runtime": {
@@ -108,7 +110,7 @@
           "System.Reflection.Emit": "4.3.0",
           "System.Reflection.Emit.Lightweight": "4.3.0",
           "System.Runtime.Serialization.Primitives": "4.3.0",
-          "System.Threading.Tasks.Extensions": "4.5.2",
+          "System.Threading.Tasks.Extensions": "4.5.1",
           "System.ValueTuple": "4.5.0"
         },
         "runtime": {
@@ -339,7 +341,7 @@
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/2.2.3": {
         "dependencies": {
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll": {
@@ -355,7 +357,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "2.2.3",
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll": {
@@ -415,7 +417,7 @@
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "2.8.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Contracts": "2.2.3",
-          "Newtonsoft.Json": "12.0.1",
+          "Newtonsoft.Json": "11.0.2",
           "NuGet.Frameworks": "4.7.0"
         },
         "runtime": {
@@ -452,34 +454,6 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.2.0"
-        }
-      },
-      "Newtonsoft.Json/12.0.1": {
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "12.0.0.0",
-            "fileVersion": "12.0.1.22727"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
-        }
-      },
-      "Npgsql/4.0.5": {
-        "dependencies": {
-          "System.Memory": "4.5.2",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
-          "System.Threading.Tasks.Extensions": "4.5.2",
-          "System.ValueTuple": "4.5.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Npgsql.dll": {
-            "assemblyVersion": "4.0.5.0",
-            "fileVersion": "4.0.5.0"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.0/Npgsql.dll": {}
         }
       },
       "NuGet.Frameworks/4.7.0": {
@@ -681,7 +655,6 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "System.Memory/4.5.2": {},
       "System.Net.NameResolution/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.2.0",
@@ -798,18 +771,6 @@
         }
       },
       "System.Reflection.TypeExtensions/4.4.0": {},
-      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
-        "runtime": {
-          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
-            "assemblyVersion": "4.0.4.1",
-            "fileVersion": "4.6.26919.2"
-          }
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        }
-      },
-      "System.Threading.Tasks.Extensions/4.5.2": {},
       "System.Threading.ThreadPool/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0",
@@ -827,7 +788,7 @@
       "Telegram.Bot/14.10.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "12.0.1",
+          "Newtonsoft.Json": "11.0.2",
           "System.Net.Requests": "4.3.0"
         },
         "runtime": {
@@ -842,7 +803,7 @@
       },
       "VallySoft.EventBus/1.0.0": {
         "dependencies": {
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/VallySoft.EventBus.dll": {
@@ -859,7 +820,7 @@
           "Autofac": "4.9.1",
           "Microsoft.CSharp": "4.5.0",
           "Microsoft.Extensions.Logging": "2.2.0",
-          "Newtonsoft.Json": "12.0.1",
+          "Newtonsoft.Json": "11.0.2",
           "Polly": "6.0.1",
           "RabbitMQ.Client": "5.0.1",
           "System.ValueTuple": "4.5.0",
@@ -878,7 +839,7 @@
       "VS.Dapper.SqlMapper/1.0.0": {
         "dependencies": {
           "Dapper": "1.50.5",
-          "VS.Extensions": "1.0.1"
+          "VS.Extensions": "1.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/VS.Dapper.SqlMapper.dll": {
@@ -890,9 +851,9 @@
           "lib/netstandard2.0/VS.Dapper.SqlMapper.dll": {}
         }
       },
-      "VS.Extensions/1.0.1": {
+      "VS.Extensions/1.0.0": {
         "dependencies": {
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "11.0.2"
         },
         "runtime": {
           "lib/netstandard2.0/VS.Extensions.dll": {
@@ -918,75 +879,67 @@
           "lib/netstandard2.0/VS.MessageBus.dll": {}
         }
       },
-      "Events/1.0.0": {
-        "dependencies": {
-          "Models": "1.0.0",
-          "OrderEngine": "1.0.0",
-          "VallySoft.EventBus": "1.0.0"
-        },
+      "Events/1.0.0.0": {
         "runtime": {
-          "Events.dll": {}
+          "Events.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "Events.dll": {}
         }
       },
-      "Models/1.0.0": {
+      "Models/1.0.0.0": {
         "runtime": {
-          "Models.dll": {}
+          "Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "Models.dll": {}
         }
       },
-      "Models.Map/1.0.0": {
-        "dependencies": {
-          "Models": "1.0.0",
-          "VS.Dapper.SqlMapper": "1.0.0"
-        },
+      "Models.Map/1.0.0.0": {
         "runtime": {
-          "Models.Map.dll": {}
+          "Models.Map.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "Models.Map.dll": {}
         }
       },
-      "OrderEngine/1.0.0": {
-        "dependencies": {
-          "Models": "1.0.0",
-          "Newtonsoft.Json": "12.0.1"
-        },
+      "OrderEngine/1.0.0.0": {
         "runtime": {
-          "OrderEngine.dll": {}
+          "OrderEngine.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "OrderEngine.dll": {}
         }
       },
-      "Repositories/1.0.0": {
-        "dependencies": {
-          "Models": "1.0.0",
-          "Models.Map": "1.0.0",
-          "Npgsql": "4.0.5",
-          "VS.Extensions": "1.0.1"
-        },
+      "Repositories/1.0.0.0": {
         "runtime": {
-          "Repositories.dll": {}
+          "Repositories.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "Repositories.dll": {}
         }
       },
-      "Telegram.Bot.Framework/2.0.0-alpha4": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Options": "2.2.0",
-          "Telegram.Bot": "14.10.0"
-        },
+      "Telegram.Bot.Framework/1.0.0.0": {
         "runtime": {
-          "Telegram.Bot.Framework.dll": {}
+          "Telegram.Bot.Framework.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         },
         "compile": {
           "Telegram.Bot.Framework.dll": {}
@@ -1005,7 +958,7 @@
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "dependencies": {
-          "Newtonsoft.Json": "12.0.1",
+          "Newtonsoft.Json": "11.0.2",
           "Newtonsoft.Json.Bson": "1.0.1"
         },
         "compile": {
@@ -1293,7 +1246,7 @@
       "Microsoft.AspNetCore.Authentication.OAuth/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication": "2.2.0",
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Authentication.OAuth.dll": {}
@@ -1571,7 +1524,7 @@
           "Microsoft.AspNetCore.Http.Connections.Common": "1.1.0",
           "Microsoft.AspNetCore.Routing": "2.2.0",
           "Microsoft.AspNetCore.WebSockets": "2.2.0",
-          "Newtonsoft.Json": "12.0.1",
+          "Newtonsoft.Json": "11.0.2",
           "System.Security.Principal.Windows": "4.5.0"
         },
         "compile": {
@@ -1582,7 +1535,7 @@
       "Microsoft.AspNetCore.Http.Connections.Common/1.1.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "2.2.0",
-          "Newtonsoft.Json": "12.0.1",
+          "Newtonsoft.Json": "11.0.2",
           "System.Buffers": "4.5.0"
         },
         "compile": {
@@ -1676,7 +1629,7 @@
       "Microsoft.AspNetCore.JsonPatch/2.2.0": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {}
@@ -1775,7 +1728,7 @@
           "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
           "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
           "System.Diagnostics.DiagnosticSource": "4.5.0",
-          "System.Threading.Tasks.Extensions": "4.5.2"
+          "System.Threading.Tasks.Extensions": "4.5.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Core.dll": {}
@@ -1909,7 +1862,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
           "Microsoft.Extensions.Logging.Console": "2.2.0",
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.NodeServices.dll": {}
@@ -2059,9 +2012,9 @@
           "Microsoft.Extensions.Options": "2.2.0",
           "System.Buffers": "4.5.0",
           "System.IO.Pipelines": "4.5.2",
-          "System.Memory": "4.5.2",
+          "System.Memory": "4.5.1",
           "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1",
           "System.Security.Principal.Windows": "4.5.0"
         },
         "compile": {
@@ -2091,11 +2044,11 @@
           "Microsoft.Extensions.Logging.Abstractions": "2.2.0",
           "Microsoft.Extensions.Options": "2.2.0",
           "Microsoft.Net.Http.Headers": "2.2.0",
-          "System.Memory": "4.5.2",
+          "System.Memory": "4.5.1",
           "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1",
           "System.Security.Cryptography.Cng": "4.5.0",
-          "System.Threading.Tasks.Extensions": "4.5.2"
+          "System.Threading.Tasks.Extensions": "4.5.1"
         },
         "compile": {
           "lib/netcoreapp2.1/Microsoft.AspNetCore.Server.Kestrel.Core.dll": {}
@@ -2159,7 +2112,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "2.2.0",
           "Microsoft.Extensions.Options": "2.2.0",
-          "Newtonsoft.Json": "12.0.1",
+          "Newtonsoft.Json": "11.0.2",
           "System.Buffers": "4.5.0"
         },
         "compile": {
@@ -2185,7 +2138,7 @@
       "Microsoft.AspNetCore.SignalR.Protocols.Json/1.1.0": {
         "dependencies": {
           "Microsoft.AspNetCore.SignalR.Common": "1.1.0",
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {}
@@ -2510,7 +2463,7 @@
         "dependencies": {
           "Microsoft.Extensions.Configuration": "2.2.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "2.2.0",
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll": {}
@@ -2565,7 +2518,7 @@
       "Microsoft.Extensions.DependencyModel/2.1.0": {
         "dependencies": {
           "Microsoft.DotNet.PlatformAbstractions": "2.1.0",
-          "Newtonsoft.Json": "12.0.1",
+          "Newtonsoft.Json": "11.0.2",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Dynamic.Runtime": "4.3.0",
           "System.Linq": "4.3.0"
@@ -2772,7 +2725,7 @@
       "Microsoft.Extensions.Logging.EventSource/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "2.2.0",
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.EventSource.dll": {}
@@ -2830,8 +2783,8 @@
       },
       "Microsoft.Extensions.Primitives/2.2.0": {
         "dependencies": {
-          "System.Memory": "4.5.2",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+          "System.Memory": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
@@ -2852,7 +2805,7 @@
       "Microsoft.IdentityModel.JsonWebTokens/5.3.0": {
         "dependencies": {
           "Microsoft.IdentityModel.Tokens": "5.3.0",
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.IdentityModel.JsonWebTokens.dll": {}
@@ -2887,7 +2840,7 @@
       "Microsoft.IdentityModel.Protocols.OpenIdConnect/5.3.0": {
         "dependencies": {
           "Microsoft.IdentityModel.Protocols": "5.3.0",
-          "Newtonsoft.Json": "12.0.1",
+          "Newtonsoft.Json": "11.0.2",
           "System.Dynamic.Runtime": "4.3.0",
           "System.IdentityModel.Tokens.Jwt": "5.3.0"
         },
@@ -2911,7 +2864,7 @@
       "Microsoft.IdentityModel.Tokens/5.3.0": {
         "dependencies": {
           "Microsoft.IdentityModel.Logging": "5.3.0",
-          "Newtonsoft.Json": "12.0.1",
+          "Newtonsoft.Json": "11.0.2",
           "System.Collections": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
           "System.Reflection": "4.3.0",
@@ -2970,10 +2923,16 @@
         },
         "compileOnly": true
       },
+      "Newtonsoft.Json/11.0.2": {
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "compileOnly": true
+      },
       "Newtonsoft.Json.Bson/1.0.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
@@ -3281,7 +3240,7 @@
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "5.3.0",
           "Microsoft.IdentityModel.Tokens": "5.3.0",
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "11.0.2"
         },
         "compile": {
           "lib/netstandard2.0/System.IdentityModel.Tokens.Jwt.dll": {}
@@ -3392,6 +3351,9 @@
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0"
         },
+        "compileOnly": true
+      },
+      "System.Memory/4.5.1": {
         "compileOnly": true
       },
       "System.Net.Http/4.3.0": {
@@ -3554,6 +3516,12 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.2.0",
           "Microsoft.NETCore.Targets": "2.0.0"
+        },
+        "compileOnly": true
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         },
         "compileOnly": true
       },
@@ -3816,7 +3784,7 @@
       "System.Text.Encoding.CodePages/4.5.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.2.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
         },
         "compileOnly": true
       },
@@ -3862,6 +3830,9 @@
         },
         "compileOnly": true
       },
+      "System.Threading.Tasks.Extensions/4.5.1": {
+        "compileOnly": true
+      },
       "System.Threading.Tasks.Parallel/4.3.0": {
         "dependencies": {
           "System.Collections.Concurrent": "4.3.0",
@@ -3897,7 +3868,7 @@
           "System.Text.Encoding.Extensions": "4.3.0",
           "System.Text.RegularExpressions": "4.3.0",
           "System.Threading.Tasks": "4.3.0",
-          "System.Threading.Tasks.Extensions": "4.5.2"
+          "System.Threading.Tasks.Extensions": "4.5.1"
         },
         "compileOnly": true
       },
@@ -4152,20 +4123,6 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "Newtonsoft.Json/12.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
-      "path": "newtonsoft.json/12.0.1",
-      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
-    },
-    "Npgsql/4.0.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-gKEhp3ICU2TY3yLnxda9QJf3g6aDHZ/PkRFoPXbjFjuCX18jbY58EYP7VGpXSzfzsQAGSOEB9vjdgEfnnvnRyQ==",
-      "path": "npgsql/4.0.5",
-      "hashPath": "npgsql.4.0.5.nupkg.sha512"
-    },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -4243,13 +4200,6 @@
       "path": "system.linq.parallel/4.3.0",
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
     },
-    "System.Memory/4.5.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Ohf9h6em5CjPaAzupGtW/TWMzX6aVfIGPh7bq5KQmfvYJr+DqvOa0cRS9ggFKGIuvKTModCQEacGC/CwE8j7cg==",
-      "path": "system.memory/4.5.2",
-      "hashPath": "system.memory.4.5.2.nupkg.sha512"
-    },
     "System.Net.NameResolution/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -4291,20 +4241,6 @@
       "sha512": "sha512-dkmh/ySlwnXJp/1qYP9uyKkCK1CXR/REFzl7abHcArxBcV91mY2CgrrzSRA5Z/X4MevJWwXsklGRdR3A7K9zbg==",
       "path": "system.reflection.typeextensions/4.4.0",
       "hashPath": "system.reflection.typeextensions.4.4.0.nupkg.sha512"
-    },
-    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-k3rsGIl3aG0AJVIxs8z2mTvF4BSFJtkHSYbnhgcdZX9L80Hr5U8/VYHlci26mJz3gZSFX1JjRyEQZhbDnBb4tw==",
-      "path": "system.runtime.compilerservices.unsafe/4.5.2",
-      "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
-    },
-    "System.Threading.Tasks.Extensions/4.5.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-5HCu8V3QB+gouMZmGrA666weZ0UQRt+OTD16rSE3Hyhu4Qhlvxkf4nTPI0GLy52s0rxgi7C8t2ayFAzw7UK1og==",
-      "path": "system.threading.tasks.extensions/4.5.2",
-      "hashPath": "system.threading.tasks.extensions.4.5.2.nupkg.sha512"
     },
     "System.Threading.ThreadPool/4.3.0": {
       "type": "package",
@@ -4355,12 +4291,12 @@
       "path": "vs.dapper.sqlmapper/1.0.0",
       "hashPath": "vs.dapper.sqlmapper.1.0.0.nupkg.sha512"
     },
-    "VS.Extensions/1.0.1": {
+    "VS.Extensions/1.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RHY5Xgoet0GpibVtIwzAtZ6aiDg10qS/phocHRAMYSYCsUpGl/DUVAP7SNvcQvmcDCdSuF6cVKiByWXN6U6AHg==",
-      "path": "vs.extensions/1.0.1",
-      "hashPath": "vs.extensions.1.0.1.nupkg.sha512"
+      "sha512": "sha512-ERqRcgloCji91mGiJP0BsDZfGWP7Ijg070YHx/d5YXOkGqw49Bd8kkM47vWCIWF8Xca8aP/BUX6c/pjMqLGjdA==",
+      "path": "vs.extensions/1.0.0",
+      "hashPath": "vs.extensions.1.0.0.nupkg.sha512"
     },
     "VS.MessageBus/1.0.0": {
       "type": "package",
@@ -4369,33 +4305,33 @@
       "path": "vs.messagebus/1.0.0",
       "hashPath": "vs.messagebus.1.0.0.nupkg.sha512"
     },
-    "Events/1.0.0": {
-      "type": "project",
+    "Events/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Models/1.0.0": {
-      "type": "project",
+    "Models/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Models.Map/1.0.0": {
-      "type": "project",
+    "Models.Map/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "OrderEngine/1.0.0": {
-      "type": "project",
+    "OrderEngine/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Repositories/1.0.0": {
-      "type": "project",
+    "Repositories/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Telegram.Bot.Framework/2.0.0-alpha4": {
-      "type": "project",
+    "Telegram.Bot.Framework/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
@@ -5559,6 +5495,13 @@
       "path": "microsoft.win32.registry/4.5.0",
       "hashPath": "microsoft.win32.registry.4.5.0.nupkg.sha512"
     },
+    "Newtonsoft.Json/11.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "path": "newtonsoft.json/11.0.2",
+      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
     "Newtonsoft.Json.Bson/1.0.1": {
       "type": "package",
       "serviceable": true,
@@ -5930,6 +5873,13 @@
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
     },
+    "System.Memory/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vcG3/MbfpxznMkkkaAblJi7RHOmuP7kawQMhDgLSuA1tRpRQYsFSCTxRSINDUgn2QNn2jWeLxv8er5BXbyACkw==",
+      "path": "system.memory/4.5.1",
+      "hashPath": "system.memory.4.5.1.nupkg.sha512"
+    },
     "System.Net.Http/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -6034,6 +5984,13 @@
       "sha512": "sha512-JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qUJMNWhbm9oZ3XaMFiEMiYmRPszbnXIkRIi7+4b2Md2xZ6JUOepf0/kY3S85qistRohl9OdMe4PsO+RdG2kTIQ==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.1",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
     },
     "System.Runtime.Extensions/4.3.0": {
       "type": "package",
@@ -6237,6 +6194,13 @@
       "sha512": "sha512-LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L1Zt2zXgsKYistLZdhod2qqdqly3T2QUBZOBroIm4V6lD17/JBzfhc0zfBzg3As2EYhQvEPqUWhcJ+9m570gPg==",
+      "path": "system.threading.tasks.extensions/4.5.1",
+      "hashPath": "system.threading.tasks.extensions.4.5.1.nupkg.sha512"
     },
     "System.Threading.Tasks.Parallel/4.3.0": {
       "type": "package",
