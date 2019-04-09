@@ -48,7 +48,7 @@ namespace CAP.Bot.Telegram
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             //services.AddSingleton<IBotService>(s => new BotService(""));
-            var connectionString = Configuration.GetConnectionString("PostgreSQLBaseConnection");
+            var connectionString = "User ID=postgres;Password=;Host=84.201.154.141;Port=5432;Database=CAP.Prod;Pooling=true";
             VS.Dapper.SqlMapper.MappingContext.LoadMaps<Empty>();
             this.InitDI(services, connectionString);
 
@@ -73,18 +73,11 @@ namespace CAP.Bot.Telegram
                 var logger = sp.GetRequiredService<ILogger<DefaultRabbitMQPersistentConnection>>();
                 var factory = new ConnectionFactory()
                 {
-                    HostName = Configuration["EventBusConnection"]
+                    HostName = "84.201.154.141"
                 };
 
-                if (!string.IsNullOrEmpty(Configuration["EventBusUserName"]))
-                {
-                    factory.UserName = Configuration["EventBusUserName"];
-                }
-
-                if (!string.IsNullOrEmpty(Configuration["EventBusPassword"]))
-                {
-                    factory.Password = Configuration["EventBusPassword"];
-                }
+                factory.UserName = "guest";
+                factory.Password = "guest";
 
                 var retryCount = 5;
                 if (!string.IsNullOrEmpty(Configuration["EventBusRetryCount"]))
@@ -142,7 +135,7 @@ namespace CAP.Bot.Telegram
 
         private void RegisterEventBus(IServiceCollection services)
         {
-            var subscriptionClientName = Configuration["SubscriptionClientName"];
+            var subscriptionClientName = "cap_bot_test";
 
             services.AddSingleton<IEventBus, EventBusRabbitMQ>(sp =>
             {
